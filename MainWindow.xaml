@@ -5,18 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_5_WPF_Homework"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400"
+        Title="Список дел" Height="450" Width="400"
         ResizeMode="NoResize"
         Icon="/icon.png">
     <Grid Background="#FFFDFAF1">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="0.15*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="0.15*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Column="0"
-                    HorizontalAlignment="Center"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0"
+                    HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Grid.ColumnSpan="2">
             <TextBlock Text="Список дел"
@@ -41,11 +46,14 @@
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            
-                            <Button Content="x"
+
+                            <Button  Content="X"
                                     Background="#5EBEC4"
                                     Click="btnDelete"
-                                    VerticalContentAlignment="Center"/>
+                                    VerticalContentAlignment="Center">
+
+                                <!--<Image Source="/delete.png" Width="10" Height="10"/>-->
+                            </Button>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
@@ -60,17 +68,19 @@
 
         </DataGrid>
 
-        <StackPanel Grid.Column="0" Grid.Row="2"
-                    HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Column="1" Grid.Row="0"
+                    HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
 
-            <Button Content="Добавить дело"
+            <Button 
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Background="#5EBEC4"
                     Padding="5"
                     Name="buttonAdd"
                     Click="btnAdd">
-                
+
+                <Image Source="/add.png"  Width="10" Height="10"/>
+
                 <Button.ToolTip>
                     <ToolTip>
                         <TextBlock Text="При добавлении дела появится в списке слева, и его придется выполнить"/>

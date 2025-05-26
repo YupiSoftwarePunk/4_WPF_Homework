@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_5_WPF_Homework"
         mc:Ignorable="d"
-        Title="NewTodo" Height="450" Width="400"
-        ResizeMode="NoResize">
+        Title="Добавление нового дела" Height="450" Width="400"
+        ResizeMode="NoResize"
+        Icon="/icon.png">
     
     <Grid Background="#FFFDFAF1">
         <Grid.RowDefinitions>
