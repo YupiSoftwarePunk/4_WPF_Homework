@@ -29,7 +29,9 @@ namespace _5_WPF_Homework
 
         private void btnAdd(object sender, RoutedEventArgs e)
         {
-
+            var NewTodo = new NewTodo();
+            NewTodo.Show();
+            NewTodo.Owner = this;
         }
 
 

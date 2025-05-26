@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_5_WPF_Homework"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400">
-    <Grid>
+        Title="MainWindow" Height="450" Width="400"
+        ResizeMode="NoResize"
+        Icon="/icon.png">
+    <Grid Background="#FFFDFAF1">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.15*"/>
             <RowDefinition Height="*"/>
@@ -23,7 +25,10 @@
 
 
         <DataGrid Grid.Column="0" Grid.Row="1" 
-                  Background="#FDF5DF" Margin="5" Name="ToDolist">
+                  Background="#FDF5DF" Margin="5" Name="ToDolist"
+                  Grid.ColumnSpan="2"
+                  AutoGenerateColumns="False"
+                  HeadersVisibility="None">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn Width="0.1*"/>
                 
@@ -32,9 +37,11 @@
                 
                 <DataGridTextColumn Binding="{Binding Path=Date, StringFormat=dd.MM.yyyy}"
                                     Width="0.5*" IsReadOnly="True"/>
+                
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
+                            
                             <Button Content="x"
                                     Background="#5EBEC4"
                                     Click="btnDelete"
@@ -46,6 +53,7 @@
 
             <DataGrid.RowDetailsTemplate>
                 <DataTemplate>
+                    
                     <TextBlock Text="{Binding Path=Description}"/>
                 </DataTemplate>
             </DataGrid.RowDetailsTemplate>

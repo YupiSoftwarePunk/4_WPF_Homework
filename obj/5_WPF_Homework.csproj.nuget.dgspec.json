@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Denis\\Documents\\projects C#\\5_WPF_Homework\\5_WPF_Homework.csproj": {}
+    "C:\\Users\\Denis\\Documents\\projects C#\\4_WPF_Homework\\5_WPF_Homework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Denis\\Documents\\projects C#\\5_WPF_Homework\\5_WPF_Homework.csproj": {
+    "C:\\Users\\Denis\\Documents\\projects C#\\4_WPF_Homework\\5_WPF_Homework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denis\\Documents\\projects C#\\5_WPF_Homework\\5_WPF_Homework.csproj",
+        "projectUniqueName": "C:\\Users\\Denis\\Documents\\projects C#\\4_WPF_Homework\\5_WPF_Homework.csproj",
         "projectName": "5_WPF_Homework",
-        "projectPath": "C:\\Users\\Denis\\Documents\\projects C#\\5_WPF_Homework\\5_WPF_Homework.csproj",
+        "projectPath": "C:\\Users\\Denis\\Documents\\projects C#\\4_WPF_Homework\\5_WPF_Homework.csproj",
         "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Denis\\Documents\\projects C#\\5_WPF_Homework\\obj\\",
+        "outputPath": "C:\\Users\\Denis\\Documents\\projects C#\\4_WPF_Homework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
