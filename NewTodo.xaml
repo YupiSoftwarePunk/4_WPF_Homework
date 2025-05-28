@@ -45,10 +45,12 @@
 
                 <StackPanel>
                     <TextBlock Text="Описание:" Margin="5"/>
-                    <TextBox MinLines="10" AcceptsReturn="True"
+                    <TextBox MinLines="5" AcceptsReturn="True"
                              AcceptsTab="True" Margin="5"
                              BorderBrush="#5EBEC4"
-                             Name="descriptionToDo"/>
+                             Name="descriptionToDo"
+                             Height="100" 
+                             VerticalScrollBarVisibility="Visible"/>
                 </StackPanel>
 
             </StackPanel>

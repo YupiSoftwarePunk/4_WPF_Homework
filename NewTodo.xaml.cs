@@ -42,6 +42,8 @@ namespace _5_WPF_Homework
 
             main.ToDolist.ItemsSource = null;
             main.ToDolist.ItemsSource = main.todo;
+
+            Hide();
         }
     }
 }

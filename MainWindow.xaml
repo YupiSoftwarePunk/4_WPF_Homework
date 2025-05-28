@@ -28,16 +28,16 @@
                FontSize="26"/>
         </StackPanel>
 
-
+        
         <DataGrid Grid.Column="0" Grid.Row="1" 
                   Background="#FDF5DF" Margin="5" Name="ToDolist"
                   Grid.ColumnSpan="2"
                   AutoGenerateColumns="False"
-                  HeadersVisibility="None">
+                  HeadersVisibility="None" VerticalScrollBarVisibility="Visible">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn Width="0.1*"/>
-                
-                <DataGridTextColumn Binding="{Binding Path=Name}"
+
+                    <DataGridTextColumn Binding="{Binding Path=Name}"
                                     Width="*" IsReadOnly="True"/>
                 
                 <DataGridTextColumn Binding="{Binding Path=Date, StringFormat=dd.MM.yyyy}"
